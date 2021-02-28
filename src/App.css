@@ -10,14 +10,17 @@
 .container-wrapper{
     display: flex; 
     width: inherit;
-    max-width: 1000px;
+    max-width: 1200px;
     align-items: flex-start;
     justify-content: center;
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
     .container-wrapper{
         flex-direction: column;
+    }
+    .container-wrapper{
+        align-items: center;
     }
 }

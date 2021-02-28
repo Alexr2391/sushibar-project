@@ -1,9 +1,8 @@
 import React, { useState, useRef } from 'react'
 import ImagePreview from './ImagePreview'
 import './css/ProductCard.css'
-import item from  '../img/edamame.jpeg'
 
-const ProductCard =({src, desc, title}) => {
+const ProductCard =({src, desc, title, price}) => {
 
     let makeStyle  = {
             backgroundImage: `url(${src})`
@@ -13,7 +12,7 @@ const ProductCard =({src, desc, title}) => {
 
     const [hidden, setHidden] = useState(false)
 
-    const focusObject = () => { 
+    const showImageBig = () => { 
         hidden === false ? setHidden(true) : setHidden(false)
 
         imageRef.current.map(e => {
@@ -24,7 +23,7 @@ const ProductCard =({src, desc, title}) => {
 
     return (
 
-        <div onClick={() => focusObject()} className="product-item">
+        <div onClick={() => showImageBig()} className="product-item">
 
             <ImagePreview background={src} onActive={hidden} />
 
@@ -35,7 +34,7 @@ const ProductCard =({src, desc, title}) => {
 
                     <p>{desc}</p>
 
-                    <p className="price_tag">5.00€</p>
+                    <p className="price_tag">{price}</p>
                 </div>
                 <div ref={ref => imageRef.current[0] = ref} className="product-image-container">
                     <div className="product-img-placeholder" style={makeStyle}></div>
@@ -49,9 +48,10 @@ const ProductCard =({src, desc, title}) => {
 }
 
 ProductCard.defaultProps = {
-    src : item, 
-    title : 'Some delicious food', 
-    desc : 'Not available'
+    src : 'https://previews.123rf.com/images/balinature/balinature1709/balinature170900090/87106838-frame-with-set-of-traditional-japanese-food-on-a-dark-background-sushi-rolls-nigiri-raw-salmon-steak.jpg', 
+    title : 'Comming soon ...', 
+    desc : 'Not available at the moment',
+    price : null
 }
 
 export default ProductCard
