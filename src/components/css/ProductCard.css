@@ -15,9 +15,25 @@
 }
 
 .product-content{
+    position: relative;
     width: 100%;
     display:flex;
 }
+
+.product-content:after{
+    content:'';
+    z-index: 2;
+    position: absolute; 
+    height: 80%;
+    width: 4px;
+    left: -1px; 
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--numberSixRed);
+}
+
+
+
 .product-info{
     flex: 0.50;
     display:flex;
