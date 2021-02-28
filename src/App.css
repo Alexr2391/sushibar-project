@@ -1,0 +1,23 @@
+.container{
+    width: 100%;
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container-wrapper{
+    display: flex; 
+    width: inherit;
+    max-width: 1000px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .container-wrapper{
+        flex-direction: column;
+    }
+}

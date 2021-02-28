@@ -1,0 +1,24 @@
+.navbar-main{
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;    
+    width: 100%; 
+}
+
+.navbar-list{
+    display:flex;
+    list-style: none;
+    height: inherit;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.nav-item:first-child{
+    height: 100%;
+}
+
+.navbar-list > li {
+    color: #fff;
+}

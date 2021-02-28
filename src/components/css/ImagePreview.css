@@ -1,0 +1,14 @@
+.preview--hidden{
+    height: 0;
+    flex: 1;
+    background-image: url('https://wolt-menu-images-cdn.wolt.com/menu-images/5f15789fd98ff8b3f654548e/4b54f230-ca95-11ea-88bc-6643bdb0a777____11_.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: height 0.2s linear
+}
+
+.preview--hidden.active{
+    height: 300px;
+    transition: height 0.2s linear
+}

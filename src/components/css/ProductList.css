@@ -1,0 +1,15 @@
+.product-list-container{
+    flex:0.60;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.product-list-wrapper{
+    flex: 0.95;
+}
+
+
+.product-image-container{
+
+}

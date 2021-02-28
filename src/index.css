@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto thin', sans-serif;
+}
+
+
+:root{
+    --numberSixRed: #ef4a23;
+}
+
+
+body{
+    background-image: url('./img/sushifish.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-y: auto;
+}
+
